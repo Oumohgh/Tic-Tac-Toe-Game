@@ -48,7 +48,7 @@ const winFunction = (letter) => {
 
 const drawFunction = () => {
   disableButtons();
-  msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
+  msgRef.innerHTML = "&#x1F60E; <br> Its a Draw";
 };
 
 
@@ -73,9 +73,9 @@ const winChecker = () => {
    
   
     if (element1 != "" && (element2 != "") & (element3 != "")) {
-      if (element1 == element2 && element2 == element3) {
+      if (element2 == element3 && element1 == element2) {
         //Illa 3 buttuns b7al b7al pass value l winfunc
-        winFunction(element1);
+        winFunction(element3);
       }
     }
   }
@@ -94,12 +94,11 @@ btnRef.forEach((element) => {
       element.innerText = "O";
       element.disabled = true;
     }
-
     count += 1;
     if (count == 9) {
       drawFunction();
     }
-    //t9lb 3la win f kola click
+    
     winChecker();
   });
 });
