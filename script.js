@@ -73,13 +73,14 @@ const winChecker = () => {
    
   
     if (element1 != "" && (element2 != "") & (element3 != "")) {
-      if (element2 == element3 && element1 == element2) {
-        //Illa 3 buttuns b7al b7al pass value l winfunc
-        winFunction(element3);
+      if (element1 == element2 && element2 ==element3  ){
+        winFunction(element1)
+      }
       }
     }
-  }
-};
+  };
+
+
 
 btnRef.forEach((element) => {
   element.addEventListener("click", () => {

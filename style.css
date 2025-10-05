@@ -31,7 +31,7 @@ html {
   border: none;
   border-radius: 8px;
   font-size: 12vmin;
-  color: #fabb0f;
+  color: #5080a1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 #restart {
@@ -46,7 +46,7 @@ html {
   display: block;
 }
 .popup {
-  background: linear-gradient(135deg, #fcc550, rgb(255, 212, 118));
+  background: linear-gradient(135deg,#385a71, rgb(56,90,113));
   height: 100%;
   width: 100%;
   position: absolute;
